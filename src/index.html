@@ -8,13 +8,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="French">
     <title>Attestation de déplacement dérogatoire</title>
-    <script type="text/javascript">
-        window._mNHandle = window._mNHandle || {};
-        window._mNHandle.queue = window._mNHandle.queue || [];
-        medianet_versionId = "3121199";
-    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://contextual.media.net/dmedianet.js?cid=8CUY31688" async="async"></script>
+
 </head>
 <body class="container">
     <h1 id="Welcome mb-4"> Générateur d'attestation COVID-19 en un click ! </h1>
@@ -31,7 +26,7 @@
     <h2 id="Usage"> Utilisation </h2>  
     <!--Generate usage from readme: https://markdowntohtml.com/ -->
     <p>Concu comme un lien a bookmarker sur un dispositif mobile (telephone, tablette, etc), l&#39;ouverture de ce lien declenchera le telechargement d&#39;une nouvelle attestation enrichie des informations fournies dans le lien.</p>
-    <p>Cette exemple de lien (prealablement bookmarke) <a href="https://attestationcovid.site/?address=15%20rue%20d%27Antibes&amp;birthday=20/03/1882&amp;city=Antibes&amp;firstname=Rene&amp;minutesoffset=5&amp;lastname=Coty&amp;placeofbirth=Le%20Havre&amp;zipcode=06600&amp;reason=sport_animaux">https://attestationcovid.site/?address=15 rue d&#39;Antibes&amp;birthday=20/03/1882&amp;city=Antibes&amp;firstname=Rene&amp;minutesoffset=5&amp;lastname=Coty&amp;placeofbirth=Le Havre&amp;zipcode=06600&amp;reason=sport_animaux</a> generera une attestation avec les informations suivantes:</p>
+    <p>Cette exemple de lien (prealablement bookmarke) <a href="https://covid-19.bocquet.info/?address=15%20rue%20d%27Antibes&amp;birthday=20/03/1882&amp;city=Antibes&amp;firstname=Rene&amp;minutesoffset=5&amp;lastname=Coty&amp;placeofbirth=Le%20Havre&amp;zipcode=06600&amp;reason=sport_animaux">https://covid-19.bocquet.info/?address=15 rue d&#39;Antibes&amp;birthday=20/03/1882&amp;city=Antibes&amp;firstname=Rene&amp;minutesoffset=5&amp;lastname=Coty&amp;placeofbirth=Le Havre&amp;zipcode=06600&amp;reason=sport_animaux</a> generera une attestation avec les informations suivantes:</p>
     <ul>
     <li><strong>15 rue d&#39;Antibes</strong> <em>l&#39;addresse de votre habitation</em></li>
     <li><strong>20/03/1882</strong> <em>la date de votre aniversaire</em></li>
@@ -125,7 +120,7 @@
         Which is hard to detect.
         As  consequence if kept it does not display the URL but opens a new window
         See https://html.spec.whatwg.org/multipage/input.html#submit-button-state-(type=submit) -->
-        <input id=gen_url_submit class="btn btn-info" value="Générer mon lien personnalisé" >
+        <input id=gen_url_submit class="btn btn-info" value="Générer mon lien perso" >
     </form>
     <br>
     <div id="gen_url_result"></div>
@@ -162,7 +157,7 @@
                 'minutesoffset',
                 'reason'
             ];
-            let generated_url = 'https://attestationcovid.site/?';
+            let generated_url = 'https://covid-19.bocquet.info/?';
             arrayParam.forEach(function(item) {
               generated_url += makeParamHelper(item);
             });
@@ -174,21 +169,9 @@
     </script>    
     
     <h2 id="contribution"> Contribution </h2> 
-    <p>Code is available on <a href="https://github.com/scoulomb/attestation-covid19-saison2-auto">Github</a> . Pull requests are welcome!</p>
+    <p>Code is available on <a href="https://github.com/igox/attestation-covid19-saison2-auto">Github</a> . Pull requests are welcome!</p>
 
-    <br>
-    
-    <div id="618834868">
-      <script type="text/javascript">
-          try {
-              window._mNHandle.queue.push(function (){
-                  window._mNDetails.loadTag("618834868", "970x90", "618834868");
-              });
-          }
-          catch (error) {}
-      </script>
-    </div>
-    
+    <br>   
     <script src="./js/main.js"></script>
 </body>
 </html>
